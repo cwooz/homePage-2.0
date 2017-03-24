@@ -491,3 +491,18 @@ body {
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+header {
+  width: 135px;
+  background: white;
+  padding: 30px 0; }
+  header .logo {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap; }
+    header .logo background {
+      image: url(/assets/img/cW-logo.svg);
+      repeat: no-repeat;
+      position: center;
+      size: contain;
+      color: pink; }
