@@ -634,6 +634,12 @@ body {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); } }
 
+.flex-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.3%;
+  position: relative; }
+
 section.home {
   background-image: url(/assets/img/home_bg.jpg);
   background-position: center top;
@@ -716,27 +722,57 @@ section.process {
 
 section.tools {
   background-image: url(/assets/img/tools_bg.jpg);
-  background-position: center top;
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   color: white; }
-  section.tools .tools {
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3); }
+  section.tools .home-cta {
+    color: #1e67d6; }
+  section.tools .flex-video {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index: 1; }
+    @media (max-width: 980px) {
+      section.tools .flex-video {
+        -webkit-transform: scale(1);
+                transform: scale(1); } }
+  section.tools .tools-strip {
+    position: absolute;
+    top: 0;
+    height: calc(100% + 100px);
+    width: 100%;
+    margin: -50px 0;
+    background-image: url(../img/tools/tools_strip.png);
+    background-position: center 0;
+    background-repeat: repeat-y;
+    z-index: 0; }
+    @media (max-width: 640px) {
+      section.tools .tools-strip {
+        display: none; } }
   section.tools .tools-title {
     font-size: 36px; }
-  section.tools .box {
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 30px 30px 30px 30px;
-    border: 3px solid white; }
-    section.tools .box .tools-copy {
-      margin-top: 15px;
-      font-size: 18px;
-      line-height: 1.3; }
-  section.tools .home-cta {
-    color: #1e67d6;
-    margin-top: 40px; }
+  section.tools .col-1 {
+    position: relative;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media (max-width: 640px) {
+      section.tools .col-1 {
+        height: auto;
+        display: block;
+        padding: 50px 20px; }
+        section.tools .col-1:last-child {
+          padding: 0px 20px 50px; } }
 
 section.projects {
   background-image: url(/assets/img/projects_bg.jpg);
