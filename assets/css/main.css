@@ -780,32 +780,79 @@ section.projects {
   background-size: cover;
   background-repeat: no-repeat;
   color: white; }
-  section.projects .projects {
-    margin-left: -100px;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3); }
-  section.projects .projects-title {
-    font-size: 36px; }
-  section.projects .box {
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    border-radius: 30px 30px 30px 30px;
-    border: 3px solid white; }
-    section.projects .box .projects-copy {
-      margin-top: 15px;
-      font-size: 18px;
-      line-height: 1.3; }
+  section.projects .col-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 640px) {
+      section.projects .col-1 {
+        display: block; } }
   section.projects .home-cta {
     color: #0fc396;
     margin-top: 40px; }
+  section.projects .projects-title {
+    font-size: 36px; }
+  section.projects .projects-copy {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.3; }
+  section.projects .projects-wrap {
+    margin: -50px 0; }
+    section.projects .projects-wrap::after {
+      clear: both;
+      content: "";
+      display: table; }
+  section.projects .projects-thumb {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    section.projects .projects-thumb:after {
+      content: "";
+      display: block;
+      padding-top: 100%; }
+  section.projects .projects-meta {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #44C293;
+    padding: 10px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-transform: translate(0%, 100%) scale(0.5);
+            transform: translate(0%, 100%) scale(0.5);
+    -webkit-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
+    opacity: 0; }
+    section.projects .projects-meta .name {
+      font-size: 15px;
+      line-height: 1.2; }
+    section.projects .projects-meta .date {
+      font-style: italic; }
+  section.projects .projects-thumb:hover .projects-meta {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1); }
+  @media (max-width: 640px) {
+    section.projects .desc-wrap {
+      margin-top: 100px;
+      width: 100%; } }
 
 section.email {
   background: #d62d20; }
-  section.email h1 {
-    color: white;
-    font-size: 80px;
-    font-weight: 500;
-    text-align: center; }
+  section.email .bgimg {
+    background-image: url(/assets/img/email_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px; }
 
 .home-wrap {
   display: -webkit-box;
