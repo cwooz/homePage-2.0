@@ -1,7 +1,8 @@
 $(function() {
   setInterval(function(){projectsTada()}, 4000);
+  // processBG();
   smoothScroll(300);
-  typeIt();
+  // typeIt();
 });
 
 function smoothScroll (duration) {
@@ -16,15 +17,23 @@ function smoothScroll (duration) {
   });
 }
 
+// function processBG() {
+//   $('.process-img-link').hover(function(){
+//     $(this).parent().parent().css('background-color', $(this).data('color'));
+//   }, function(){
+//     // off > revert the color
+//     $(this).parent().parent().css('background-color', $(this).parent().parent().data('orig-color'));
+//   });
+// }
+
 function projectsTada() {
   var randNum = Math.floor(Math.random() * $('.projects-thumb').length) +1
   $('.projects-thumb').eq(randNum).addClass('is-emph')
     .siblings().removeClass('is-emph');
 }
 
-$('.home-lead, h2').typeIt({
-  strings: 'Eat, Sleep, Code, Repeat',
-  speed: 100,
+$('.type-it').typeIt({  
+  speed: 150,
   //  startDelay: 250
   autoStart: true
 });
