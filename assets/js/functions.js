@@ -22,7 +22,7 @@ function projectsTada() {
     .siblings().removeClass('is-emph');
 }
 
-$('.home-lead').typeIt({
+$('.home-lead, h2').typeIt({
   strings: 'Eat, Sleep, Code, Repeat',
   speed: 100,
   //  startDelay: 250
