@@ -1,6 +1,6 @@
 ---
 layout: default
-title: wikiSearch
+title: Todo App
 thumbnail: project11.jpg
 ---
 

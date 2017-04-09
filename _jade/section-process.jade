@@ -1,5 +1,5 @@
-mixin process-img(link, img, color)
-  a(href="#{link}" data-color="#{color}").process-img-link
+mixin process-img(img)
+  .process-img-link
     img(src="assets/img/process/#{img}")
 
 section.process#process
@@ -7,12 +7,12 @@ section.process#process
 
     .col-50.flex.flex--center(data-orig-color="#bfdcdc")
       .col-1
-        +process-img("#","process1.jpg", "#aeb3b0")
-        +process-img("#","process2.jpg")
-        +process-img("#","process3.jpg")
-        +process-img("#","process4.jpg")
-        +process-img("#","process5.jpg")
-        +process-img("#","process6.jpg")
+        +process-img("process1.jpg")
+        +process-img("process2.jpg")
+        +process-img("process3.jpg")
+        +process-img("process4.jpg")
+        +process-img("process5.jpg")
+        +process-img("process6.jpg")
         .cf
 
     .col-50.flex.flex--center.order-first

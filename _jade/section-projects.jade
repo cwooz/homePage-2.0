@@ -4,7 +4,7 @@ section.projects#projects
     .col-50
       .projects-wrap
         {% for post in site.posts reversed %}
-        a(href="{{post.url}}" style="background-image: url(assets/img/projects/{{post.thumbnail}}").projects-thumb
+        a(href="{{post.url}}" style="background-image: url(assets/img/projects/{{post.thumbnail}}" target="_blank").projects-thumb
           .projects-meta
             .name {{%post.title%}}
         {% endfor %}
