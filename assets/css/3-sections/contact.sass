@@ -1,0 +1,104 @@
+section.contact
+  background: 
+    image: url(/assets/img/contact_bg.jpg)
+    position: center
+    size: cover
+    repeat: no-repeat
+  color: white
+
+  .contact-title
+    text-align: center
+    font-size: 36px
+    margin-bottom: 30px
+
+  .col-50.left
+    
+
+  .col-50
+    padding-left: 50px
+    font-style: italic
+    line-height: 1.6
+
+
+
+    &:first-child
+      border-right: solid 2px white
+
+    @media (max-width:640px)
+      border: none
+      padding: 0
+
+  .col-2
+    margin: 0
+    // padding-bottom: 20px
+
+  p
+    padding: 40px
+    text-align: right  
+    margin-left: 20px  
+
+    @media (max-width: 640px)
+      margin-top: 20px
+      align-items: center
+      text-align: center
+      border: none
+      padding: 0 10px
+
+  a
+    color: white
+    // text-decoration: underline
+
+  ul
+    list-style: none
+    padding: 30px 0
+    margin: 0
+    font-size: 17px
+
+    @media (max-width:640px)
+      text-align: center
+      padding-right: 20px
+
+  i
+    font-size: 30px
+
+  .form-display
+    background: rgba(white, 0.3)
+    border: 3px white solid
+    box-shadow: 0px 3px 8px rgba(black, 0.3)
+    display: flex
+    // width: 80%
+    margin: 0 50px 50px 50px
+
+    @media (max-width:640px)
+      margin: 35px 10px
+
+    .mc-field-group
+      position: relative
+      flex: 2
+
+      &:first-child
+        border-right: 4px white solid
+
+    input
+      position: relative
+      border: 0
+      background: none
+      display: block
+      height: 60px
+      width: 100%
+      padding: 0 15px
+
+      &:focus
+        outline: none
+
+      &[type="submit"]
+        flex: 1
+        background: white
+        color: #ba9e44
+        font-size: 24px
+        margin: 0
+
+    label
+      position: absolute
+      z-index: 2
+      font-size: 15px

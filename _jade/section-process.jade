@@ -1,10 +1,23 @@
-section.process
-  .flex.flex--space-around
-    .col-1
-      p.process-title  ...My Process...
-      .box
-        p.process-copy  "More concerned with process than outcomes, trusting that good process will aways lead to good outcomes... Not confined by tools or trends but using these things to achieve the desired results."
-      a(href="").home-cta Learn More
+mixin process-img(link, img)
+  a(href="#{link}").process-img-link
+    img(src="assets/img/process/#{img}")
 
-    .col-1
-      img.flow(src="/assets/img/flow_tiles.png")
+section.process#process
+  .flex.flex--center
+
+    .col-50.flex.flex--center
+      .col-1
+        +process-img("#","process1.jpg")
+        +process-img("#","process2.jpg")
+        +process-img("#","process3.jpg")
+        +process-img("#","process4.jpg")
+        +process-img("#","process5.jpg")
+        +process-img("#","process6.jpg")
+        .cf
+
+    .col-50.flex.flex--center.order-first
+      .col-1.description
+        p.process-title  ...My Process...
+        //- .box
+        p.process-copy  "More concerned with process than outcomes, trusting that good process will aways lead to good outcomes... Not confined by tools or trends but using these things to achieve the desired results."
+        a(href="").home-cta Learn More
