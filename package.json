@@ -4,7 +4,9 @@
   "description": "single page web application",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app.js",
+	"postinstall": "gulp default"
   },
   "author": "cwooz",
   "license": "ISC",
